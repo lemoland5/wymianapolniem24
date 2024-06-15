@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+   
+   overflow-x: hidden;
+  
+}
+
+nav{
+   
+  
+    display: flex;
+  background-color: transparent;
+ height: 0px;
+  
+    
+}
+.logo a{
+
+    position: fixed;
+    top: 40px;
+    left: 30px;
+    
+    color: #eee;
+    mix-blend-mode: exclusion;
+    font-family: "Architects Daughter", cursive;
+    margin: 0;
+    line-height: 60px;
+    font-size: 60px;
+    z-index: 10;
+
+      
+}
+
+nav ul{
+
+    position: fixed;
+    top: 40px;
+    right: 2%;
+    padding-inline: 15px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    height: 50px;
+    font-size: 1rem;
+   
+    align-items: center;
+    border-radius: 60px;
+    border: 0.5px solid #fff;
+
+    background: linear-gradient(to right, #ffffffcc , #ffffff4c);
+    
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    
+
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+
+    z-index: 1;
+
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    
+}
+nav li{
+    list-style: none;
+    padding: 5px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+nav li:hover{
+    background-color: #ffffffcc;
+
+   
+}
+nav .btn{
+
+    background-color: #000;
+    color: #fff;
+    padding: 6px;
+    padding-inline: 30px;
+    border-radius: 20px;
+
+}
+nav .btn:hover{
+    color: #000;
+}
+
+.popUpForm{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #00000070;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(32px);
+    overflow-y: scroll;
+    font-family: 'hind', sans-serif;
+    z-index: 10;
+}
+.formContainer p{
+
+margin-top: 0;
+font-weight: 300;
+
+}
+
+.formContainer{
+    margin-top: 2rem;
+    background-color: #fff;
+    width: min(75%, 1400px);
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 2rem;
+    justify-items: center;
+    gap: 3rem;
+    font-size: 1.5rem;
+    padding-top: 4rem;
+
+}
+
+form{
+display: flex;
+flex-direction: column;
+width: 75%;
+}
+
+form *{
+    font-size: 1rem;
+    line-height: 150%;
+   width: 100%;
+   box-sizing: border-box;
+   margin-block: 5px;
+   
+   
+}
+input, textarea{
+
+background-color: #eee;
+border: none;
+padding: 10px;
+
+}
+input::placeholder, textarea::placeholder{
+
+    color: #535353;
+    text-transform: uppercase;
+
+}
+
+.nameContainer{
+   display: flex;
+   justify-content: space-between;
+}
+.nameContainer *{
+    flex-basis: 47%;
+
+}
+textarea{
+    width: 100%;
+    resize: vertical;
+}
+input[type="submit"]{
+
+width: auto;
+padding-inline: 4rem;
+padding-block: 3px;
+border-radius: 60px;
+background-color: #000;
+color: #fff;
+margin-inline: auto;
+
+
+}
+
+.close{
+    padding-inline: 4rem;
+padding-block: 5px;
+border-radius: 60px;
+background-color: #ffffff99;
+border: 1px solid #fff;
+margin-inline: auto;
+display: block;
+margin-top: 150px;
+font-size: 1.2rem;
+color: #535353;
+}
+.close:hover{
+    color: #000;
+    background-color: #fff;
+    border-color: #00000088;
+}
+nav a:hover::after{
+    
+    width: 80%;
+}
+nav a::after{
+    left: 10%;
+}
+.hamburger{
+    display: none;
+}
+.kontakt{
+    width: 90vw;
+    padding: 4rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+  margin-right: 5rem;
+    
+}
+
+
+
+.kontakt h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 4em;
+    width: 500px;
+    text-indent: 100px;
+    margin-top: -6rem;
+    font-weight: 400;
+}
+.kontakt .header p:first-child{
+    font-size: 1.7rem;
+}
+.kontakt > .top{
+    display: flex;
+    height: 70%;
+    justify-content: space-between;
+}
+.kontakt .text{
+    flex-basis: 50%;
+    align-self: flex-end;
+    margin-bottom: 2rem;
+    
+}
+.kontakt button{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    padding-inline: 3rem;
+    border-radius: 3rem;
+    font-weight: 200;
+}
+.secondary{
+
+    border: 1px solid #000;
+    
+    color: #000;
+    text-decoration: none;
+    padding: 0.5rem;
+    padding-inline: 3rem;
+    border-radius: 3rem;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-top: 0.7rem;
+    
+    
+    
+    }
+   
+    
+    .btnContainer{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+    footer{
+
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 2rem;
+        
+        
+        }
+        footer ul{
+            font-size: 20px;
+            
+        }
+        footer h1{
+            font-family: "Architects Daughter", cursive;
+            font-size: 120px;
+            margin-block: 1rem;
+           
+            text-align: center;
+        }
+        footer{
+            font-family: 'montserrat', sans-serif;
+            
+        }
+        footer a{
+            color: #000;
+            text-decoration: none;
+            
+        }
+        a::after{
+            content: '';
+            display: block;
+            position: absolute;
+            height: 1px;
+            width: 0;
+            background-color: #000;
+            transition: width 0.5s;
+        }
+        
+        a{
+            position: relative;
+        }
+        .secondary:hover::after{
+            width: 100px;
+        }
+        a:hover::after{
+            width: 100%;
+        }
+        
+
+@media  screen and (max-width: 1200px){
+
+    nav ul{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+        height: 40px;
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+    top: 40px;
+    right: 2%;
+    overflow: hidden;
+    z-index: 10;
+    mix-blend-mode: exclusion;
+   
+    }
+    .hamburger *{
+    width: 55px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: transform 0.5s;
+  
+    
+    }
+    .active .lineA{
+        transform: translateY(18px) rotate(45deg);
+        
+        
+       
+    }
+    .active .lineB{
+       
+        transform: rotate(-45deg);
+
+    }
+    .active .lineC{
+        transform: translateY(400px);
+    }
+    
+    nav  ul.active{
+        display:flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        right: 0;
+        box-sizing: border-box;
+        border-radius: 0;
+        border: none;
+        padding: 20%;
+        font-size: 3rem;
+    }
+    nav  ul.active li{
+        padding: 10px;
+        border-radius: 5vw;
+    }
+
+}
+
+a::after{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 0;
+    background-color: #000;
+    transition: width 0.5s;
+}
+
+a{
+    position: relative;
+}
+.secondary:hover::after{
+    width: 100px;
+}
+a:hover::after{
+    width: 100%;
+}
+
+@media  screen and (max-width: 900px){
+    footer{
+        flex-direction: column;
+        padding-block: 2rem;
+    }
+    
+    .kontakt > .top{
+        flex-direction: column;
+    }
+    .formContainer p{
+        display: none;
+    }
+    .formContainer{
+        display: block;
+    }
+    form{
+        width: 100vw;
+    }
+
+}
+@media screen and (max-width: 600px) {
+
+    .kontakt h2{
+        display: none;
+    }
+    .kontakt .header p:first-child{
+        font-size: 10vw;
+    }
+    footer h1{
+        font-size: 25vw;
+    }
+}

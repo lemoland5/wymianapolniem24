@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Zofia Mamrowicz">
+    <meta name="description" content="my portfolio and a bit about my hobbys">
+    <title>About Me</title>
+   
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+    <script src="share.js" defer></script>
+    <script src="script.js" defer></script>
+   
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="hamburger">
+                <div class="line lineA"></div>
+                <div class="line lineB"></div>
+                <div class="line lineC"></div>
+            </div>
+            
+            <h2 class="logo"><a href="#">Zośka</a></h2>
+            <ul>
+                <li><a href="#oMnie">o mnie</a> </li>
+                <li><a href="snowboard.html">snowboard</a> </li>
+                <li class="btn"> kontakt </li>
+            </ul>
+        </nav>
+
+        <div class="tittle">
+            <h2>Hej,</h2>
+            <h1>Zośka</h1>
+            <h2>jestem</h2>
+        </div>
+
+    
+
+        
+    </header>
+    <main>
+        <section id="oMnie">
+            <h2>O mnie</h2>
+            <div aria-hidden="true"></div>
+
+            <article>
+
+                <div aria-label="gallery" class="gallery">
+                    <img src="images/IMG_89612.webp" alt="ja na starcie">
+                    <img src="images/IMG_8618.webp" alt="ja na pierwszym miejscu">
+                    <img src="images/IMG_86193.webp" alt="ja przejeżdżająca rurkę">
+                    <img src="images/IMG_9220.webp" alt="ja podczas skoku na rolkach">
+    
+    
+                </div>
+
+            <p>Hej, jestem Zośka. mam 15 lat i chodzę do drugiej klasy technikum nr. 1
+                 w Gliwicach, na kierunku technik programista.  Mam sporo 
+                 zainteresowań, ale największymi z nich są: snowboard, rolki
+                 agv i programowanie. Na snowboardzie jeżdżę pół profesjonalnie
+                  i w sezonie 2023/2024 wygrałam mistrzostwa polski juniorów w 
+                  konkurencji big air oraz zajęłam 4 miejsce na mistrzostwach polski
+                  seniorów. Rolki to dla mnie okazja na spotkanie się ze znajomymi i
+                   zwiedzenia Polski od innej strony niż zazwyczaj. Bardzo motywuje
+                    mnie to do progresu. Lubię również programować, szczególnie
+                    aplikacje i strony internetowe ale nie tylko. W tym roku razem z
+                     czwórką kolegów zajęliśmy 2 miejsce na drugim "Slesian Cyber
+             Hackathon". więcej o zainteresowaniach w zakładkach poniżej.</p>
+
+          
+        </article>
+        </section>
+        <section class="zainteresowania">
+
+            <h2 >Zainteresowania</h2>
+
+            <article >
+
+                <div class="inside">
+                <article class="intrestsCards">
+                <a href="" class="card">
+                    <img src="images/icons8-roller-skating-1001.png" alt="">
+
+                    <h3>Rolki AGV</h3>
+                    <p>Rolki to dla mnie czas dla siebie lubię najbardziej jeździć po rampach uważam że dają mi najwięcej wolności</p>
+                </a> 
+
+
+                <a href="snowboard.html" class="card">
+                    <img src="images/icons8-ski-lift-100-21.png" alt="">
+
+                    <h3>snowboard</h3>
+                    <p>jest to jedno z moich zainteresowań. Właśnie w tej dyscyplinie mam najwięcej osiągnięć. </p>
+                </a> 
+                <a href="" class="card">
+                    <img src="images/icons8-laptop-901.png" alt="">
+
+                    <h3>Programowanie</h3>
+                    <p>jest to coś co chciałabym w przyszłości robić zawodowo. W życiu zrobiłam już parę niewielkich projektów</p>
+                </a>
+            </article>
+            
+                <article class="kontakt" id="kontakt">
+                    <div class="top">
+                    <div class="header">
+                    <p>kontakt</p>
+                    <h2>Podziej się swoją opinią</h2>
+                </div>
+                    <div class="text">
+                    <p>chętnie przeczytam wszystkie porady jakie dostanę. Cały czas uczę się tworzenia i pracy. Jeśli masz jakieś porady lub opinie podziel się nimi i napisz do mnie</p>
+                    <button class="btn popUpOpen">napisz</button>
+                    </div>
+                    </div>
+                    <hr>
+                    <div class="btnContainer">
+                        <a href="" class="btn secondary">e-mail></a>
+                        <a href="https://www.instagram.com/zoska.mamrowicz/" class="btn secondary">instagram</a>
+                </div>
+                </article>
+
+            </div>
+            </article>
+
+            
+            
+        </section>
+    </main>
+    <article class="popUpForm">
+        <button class="close">Zamknij</button>
+        <div class="formContainer">
+        <p>Napisz co chcesz będę wdzięczna za każdy feedback</p>
+        <form action="">
+            <div class="nameContainer">
+            <input type="text" name="imie" placeholder="imie">
+            <input type="text" name="nazwisko" placeholder="nazwisko">
+            </div>
+            <input type="email" name="eMail" placeholder="e-mail">
+    
+            <textarea name="wiadomosc" id="wiadomosc" cols="30" rows="10" placeholder="wiadomość"></textarea> 
+            
+            <input type="submit" value="Wyślij">
+            
+        </form>
+    </div>
+    </article>
+   <footer>
+        <ul>
+            <li><a href="#oMnie">o mnie</a> </li>
+            <li>snowboard</li>
+            <li>programowanie</li>
+            <li>rolki AGV</li>
+            <li>kontakt</li>
+        </ul>
+
+        <h1>Zośka</h1>
+
+        <div class="btnContainer">
+        <a href="" class="btn secondary">e-mail</a>
+        <a href="" class="btn secondary">instagram</a>
+    </div>
+
+    </footer>
+</body>
+</html>
+
