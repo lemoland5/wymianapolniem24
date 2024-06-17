@@ -131,7 +131,6 @@ main{
     box-sizing: border-box;
     color: #ffff;
     width: 100vw;
-    padding-inline: 6rem;
 
 
 }
@@ -156,9 +155,13 @@ h1{
 }
 main article{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 3rem;
     align-items: center;
+
+    img{
+        width: 40vw !important
+    };
 
 }
 .tracker{
@@ -171,7 +174,6 @@ main article{
 section.colorful{
     background: linear-gradient(30deg, #0e1d47, #242D3B);
 
-    margin-left: -3.4vw;
 
     width: 100vw;
 
@@ -251,25 +253,12 @@ main article p , main article div{
     width: 40vw;
 }
 
-main article:nth-of-type(2) {
-    flex-wrap: wrap;
-}
-main article:nth-of-type(2) img{
+main article img{
     width: 40vw;
     align-self: center;
     
 }
 
-
-main article:nth-of-type(3){
-    display: grid;
-    background-color: #fff;
-    color: #000;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 1.5rem;
-    gap: 1.5rem;
-    overflow-x: scroll;
-}
 
 table, th, td{
     padding: 0.5rem;
@@ -289,10 +278,6 @@ table:nth-of-type(4){
     grid-column: 1 / 4;
 }
 
-article:nth-of-type(4) img{
-    width: 40vw;
-
-}
 section:nth-of-type(2) img{
     width: 30vw;
   
@@ -307,7 +292,6 @@ margin-inline: auto;
 
 }
 footer{
-    margin-top: 9rem;
 
     display: flex;
     justify-content: space-around;
@@ -327,9 +311,7 @@ h2{
 }
 @media screen and (max-width: 1000px){
 
-    main article{
-        flex-direction: column;
-    }
+
     main article p, main article div {
         width: 100% ;
         text-align: justify ;
