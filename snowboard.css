@@ -10,6 +10,10 @@ main{
     margin-top: 100vh;
 }
 
+nav{
+    visibility: hidden;
+}
+
 header{
     
   
@@ -292,6 +296,8 @@ margin-inline: auto;
 
 }
 footer{
+
+    width: 100%;
 
     display: flex;
     justify-content: space-around;
