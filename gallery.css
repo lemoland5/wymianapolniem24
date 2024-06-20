@@ -10,6 +10,30 @@ div#container{
     background-color: #212121;
 }
 
+header{
+    width: 100vw;
+    height: 60vh;
+
+    background-image: url('./img/hotelHeader.jpeg');
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    h1{
+        color: #fff;
+        font-family: "Montserrat",sans-serif;
+        font-size: 10rem;
+
+        margin-top: 4.5rem;
+
+        text-transform: uppercase;
+    }
+}
+
 main{
     width: 100%;
     min-height: 50vh;
@@ -23,26 +47,42 @@ main{
 
 main section{
     width: 90%;
-    height: 130vh;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
 
-    align-items: center;
+    justify-content: center;
 
+
+    column-gap: 1.5rem;
     row-gap: 1.5rem;
     
     padding: 3rem;
 
-    img{
-        width: 24%;
-        height: auto;
 
-        &:hover{
-            cursor: pointer;
+    div.column{
+
+        width: 30vh;
+        min-width: 23%;
+        max-width: 49%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: flex-start;
+
+        row-gap: 1.5rem;
+
+        img{
+
+            &:hover{
+                cursor: pointer;
+            }
         }
     }
+
 
 }
 
@@ -54,6 +94,9 @@ h2{
     font-size: 4vw;
     text-align: center;
     margin: 0;
+
+    margin-top: 7rem;
+    margin-bottom: 4rem;
 
     width: max-content;
 
