@@ -109,13 +109,17 @@ footer.galleryFooter{
     height: 20vh;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 
     h2{
         font-size: 2rem;
         text-decoration: none;
         color: #666;
+    }
+    
+    img{
+        height: 100%;
     }
 }
 
