@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./gallery.css">
+    <link rel="stylesheet" href="./nav.css">
+
+    <script defer src="./gallery.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="mask" style="display: none;">
+        
+    </div>
+
+    <dialog id="dialog" class="dialog">
+        <button id="closeButton">
+            <img src="./x.png" alt="">
+        </button>
+
+        <img id="dialogImg" src="./img/komp1.jpeg" alt="">
+
+        <button id="leftButton" style="display: none;">
+            <img src="left.png" alt="">
+
+        </button>
+    
+        <button id="rightButton" style="display: none;">
+            <img src="right.png" alt="">
+        </button>
+    </dialog>  
+
+
+
+
+
+
+
+
+
+
+    <div id="container">
+        <header>
+            <h1>
+                Galerie
+            </h1>
+        </header>
+        <main>
+
+            <h2>
+                Tag 1 - Essen Rallye
+            </h2>
+            <section>
+
+                <div class="column">
+                    <img class="galleryImg" src="./img/d1/bismarck.jpg" alt="">
+                    <img class="galleryImg" src="./img/d1/blanc.jpg" alt="">
+                </div>
+
+                <div class="column">
+                    <img class="galleryImg" src="./img/d1/kosciol front.jpg" alt="">
+                    <img class="galleryImg" src="./img/d1/gangussy.jpeg" alt="">
+                </div>
+
+                <div class="column">
+                    <img class="galleryImg" src="./img/d1/zusammen.jpg" alt="">
+                    <img class="galleryImg" src="./img/d1/menora.jpg" alt="">
+                </div>
+
+                <div class="column">
+                    <img class="galleryImg" src="./img/d1/madonna.jpg" alt="">
+                    <img class="galleryImg" src="./img/d1/winda.jpg" alt="">    
+                </div>
+
+            </section>
+
+            <h2>
+                Tag 2 - Paderborn und Dortmund
+            </h2>
+            <section>
+                <div class="column">
+                    <img class="galleryImg" src="./img/d2/bcd.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d2/bvb stad.jpg" alt="">
+                    <img class="galleryImg" src="./img/d2/bvb.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d2/racing.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d2/rower.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d2/sciana placzu.jpeg" alt="">
+                </div>
+                <div class="column">
+                    <img class="galleryImg" src="./img/d2/casino.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d2/comp.jpg" alt="">
+                    <img class="galleryImg" src="./img/d2/groupie.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d2/slide.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d2/stadion.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d2/technik.jpg" alt="">
+                </div>
+                <div class="column">
+                    <img class="galleryImg" src="./img/d2/drukara.jpg" alt="">
+                    <img class="galleryImg" src="./img/d2/hotel.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d2/inspect.jpg" alt="">
+                    <img class="galleryImg" src="./img/d2/telefon.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d2/terminator.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d2/trippy.jpg" alt="">
+                </div>
+                <div class="column">
+                    <img class="galleryImg" src="./img/d2/japan.jpg" alt="">
+                    <img class="galleryImg" src="./img/d2/komp1.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d2/podpis.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d2/uv.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d2/wersal.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d2/koty.jpg" alt="">
+                </div>
+
+
+            </section>
+
+            <h2>
+                Tag 3 - Zollverein und Seaside Beach
+            </h2>
+            <section>
+                <div class="column ">
+                    <img class="galleryImg" src="./img/d3/amonit.jpg" alt="">
+                    <img class="galleryImg" src="./img/d3/autograph.jpg" alt="">
+                    <img class="galleryImg" src="./img/d3/deep.jpg" alt="">
+                    <img class="galleryImg" src="./img/d3/fusball.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d3/groupie.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d3/saheim.jpg" alt="">
+                    <img class="galleryImg" src="./img/d3/klettern.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d3/oberschlesien.jpg" alt="">
+                    <img class="galleryImg" src="./img/d3/photos.jpg" alt="">
+                    <img class="galleryImg" src="./img/d3/rally.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d3/sowa.jpg" alt="">
+                    <img class="galleryImg" src="./img/d3/tv.jpg" alt="">
+                    <img class="galleryImg" src="./img/d3/wilk.jpeg" alt="">
+
+                </div>
+
+                <div class="column">
+                    <img class="galleryImg" src="./img/d3/anarchy.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d3/basket.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d3/dnd.jpg" alt="">
+                    <img class="galleryImg" src="./img/d3/gangussy.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d3/guinea.jpg" alt="">
+                    <img class="galleryImg" src="./img/d3/lp.jpg" alt="">
+                    <img class="galleryImg" src="./img/d3/obraz.jpg" alt="">
+                    <img class="galleryImg" src="./img/d3/plaza.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d3/skatepark.jpg" alt="">
+                    <img class="galleryImg" src="./img/d3/swan.jpg" alt="">
+                    <img class="galleryImg" src="./img/d3/uv.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d3/zabrze.jpg" alt="">
+                    <img class="galleryImg" src="./img/d3/zyd.jpg" alt="">
+
+                </div>
+
+                <div class="column">
+                    <img class="galleryImg" src="./img/d3/arsenal.jpg" alt="">
+                    <img class="galleryImg" src="./img/d3/bell.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d3/drukara.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d3/gornik.jpg" alt="">
+                    <img class="galleryImg" src="./img/d3/scent.jpg" alt="">
+                    <img class="galleryImg" src="./img/d3/hotwheels.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d3/neuron.jpg" alt="">
+                    <img class="galleryImg" src="./img/d3/offlimits.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d3/pompa.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d3/slask.jpg" alt="">
+                    <img class="galleryImg" src="./img/d3/topo.jpg" alt="">
+                    <img class="galleryImg" src="./img/d3/walk.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d3/zollverein.jpeg" alt="">
+
+                </div>
+
+                <div class="column">
+                    <img class="galleryImg"  src="./img/d3/artwork.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d3/bober.jpg" alt="">
+                    <img class="galleryImg" src="./img/d3/flintlock.jpg" alt="">
+                    <img class="galleryImg" src="./img/d3/green.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d3/kaczki.jpg" alt="">
+                    <img class="galleryImg" src="./img/d3/neuron1.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d3/ogon.jpg" alt="">
+                    <img class="galleryImg" src="./img/d3/sw.jpg" alt="">
+                    <img class="galleryImg" src="./img/d3//popiersia.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d3/slon.jpg" alt="">
+                    <img class="galleryImg" src="./img/d3/tour.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d3/wiarus.jpg" alt="">
+                    <img class="galleryImg" src="./img/d3/zwierzaczki.jpeg" alt="">
+
+                </div>
+            </section>
+
+
+            <h2>
+                Tag 4 - Gymnasium an der Wolfskuhle
+            </h2>
+            <section>
+                
+                <div class="column">
+                    <img class="galleryImg" src="./img/d4/badass.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d4/gepokert.jpg" alt="">
+                    <img class="galleryImg" src="./img/d4/pp.jpg" alt="">
+
+                </div>
+
+                <div class="column">
+                    <img class="galleryImg" src="./img/d4/it.jpg" alt="">
+                    <img class="galleryImg"src="./img/d4/starynawakacjach.jpg" alt="">
+                    <img class="galleryImg"src="./img/d4/dzieciwybiegly.jpeg" alt="">
+
+                </div>
+
+                <div class="column">
+                    <img class="galleryImg" src="./img/d4/deltischer.jpg" alt="">
+                    <img class="galleryImg" src="./img/d4/sd.jpg" alt="">
+                    <img class="galleryImg" src="./img/d4/karstadt.jpg" alt="">
+
+                </div>
+
+                <div class="column">
+                    <img class="galleryImg" src="./img/d4/brel schule.jpeg" alt="">
+                    <img class="galleryImg" src="./img/d4/pollack.jpg" alt="">
+                    <img class="galleryImg" src="./img/d4/pizza.jpeg" alt="">
+
+                </div>
+
+            </section>
+
+            <h2>
+                Tag 5 - Classic Remise
+            </h2>
+            <section>
+                <div class="column">
+                    <img class="galleryImg" src="./img/d5/60.jpg" alt="">
+                    <img class="galleryImg" src="./img/d5/entrance.jpg" alt="">
+                    <img class="galleryImg" src="./img/d5/ww.jpg" alt="">
+                </div>
+
+                <div class="column">
+                    <img class="galleryImg" src="./img/d5/auta.jpg" alt="">
+                    <img class="galleryImg" src="./img/d5/fg.jpg" alt="">
+                    <img class="galleryImg" src="./img/d5/gambling.jpg" alt="">
+                </div>
+
+                <div class="column">
+                    <img class="galleryImg" src="./img/d5/bl.jpg" alt="">
+                    <img class="galleryImg" src="./img/d5/hood.jpg" alt="">
+                    <img class="galleryImg" src="./img/d5/schlafen.jpg" alt="">
+                </div>
+
+                <div class="column">
+                    <img class="galleryImg" src="./img/d5/bullet.jpg" alt="">
+                    <img class="galleryImg" src="./img/d5/martini.jpg" alt="">
+                </div>
+            </section>
+            
+        </main>
+        <footer class="galleryFooter">
+
+        
+            <h2>
+                Copyright by Uczniowie :) &copy; 2024
+            </h2>
+        
+        </footer>
+    </div>
+</body>
+</html>
