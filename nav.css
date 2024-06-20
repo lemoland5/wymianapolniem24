@@ -49,7 +49,7 @@ nav ul{
     margin: 0;
     display: flex;
     justify-content: space-between;
-    width: 350px;
+    width: 400px;
     height: 50px;
     font-size: 1rem;
    
@@ -81,130 +81,49 @@ nav li{
     transition: background-color 0.3s;
 }
 nav li:hover{
-    background-color: #ffffffcc;
+    background-color: #ffffff;
 
    
 }
-nav .btn{
+.btn{
 
     background-color: #000;
-    color: #fff;
+    color: #ffffff;
     padding: 6px;
     padding-inline: 30px;
     border-radius: 20px;
 
 }
-nav .btn:hover{
+.btn:hover::after{
+    width: 0;
+}
+.btn:hover{
     color: #000;
-}
-
-.popUpForm{
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: #00000070;
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(32px);
-    overflow-y: scroll;
-    font-family: 'hind', sans-serif;
-    z-index: 10;
-}
-.formContainer p{
-
-margin-top: 0;
-font-weight: 300;
-
-}
-
-.formContainer{
-    margin-top: 2rem;
     background-color: #fff;
-    width: min(75%, 1400px);
-    margin-inline: auto;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    padding: 2rem;
-    justify-items: center;
-    gap: 3rem;
-    font-size: 1.5rem;
-    padding-top: 4rem;
-
 }
 
-form{
-display: flex;
-flex-direction: column;
-width: 75%;
-}
+li:hover .btn{
 
-form *{
-    font-size: 1rem;
-    line-height: 150%;
-   width: 100%;
-   box-sizing: border-box;
-   margin-block: 5px;
-   
-   
-}
-input, textarea{
-
-background-color: #eee;
-border: none;
-padding: 10px;
+    background-color: transparent;
 
 }
-input::placeholder, textarea::placeholder{
-
-    color: #535353;
-    text-transform: uppercase;
+button .btn{
+    font-size: 3rem;
+    border-radius: 3rem;
+    border: 2px solid #fff ;
 
 }
-
-.nameContainer{
+button{
+    border: none;
+    background-color: transparent;
+    margin-bottom: 2rem;
    display: flex;
-   justify-content: space-between;
-}
-.nameContainer *{
-    flex-basis: 47%;
-
-}
-textarea{
-    width: 100%;
-    resize: vertical;
-}
-input[type="submit"]{
-
-width: auto;
-padding-inline: 4rem;
-padding-block: 3px;
-border-radius: 60px;
-background-color: #000;
-color: #fff;
-margin-inline: auto;
-
+   width: 100vw;
+   justify-content: center;
 
 }
 
-.close{
-    padding-inline: 4rem;
-padding-block: 5px;
-border-radius: 60px;
-background-color: #ffffff99;
-border: 1px solid #fff;
-margin-inline: auto;
-display: block;
-margin-top: 150px;
-font-size: 1.2rem;
-color: #535353;
-}
-.close:hover{
-    color: #000;
-    background-color: #fff;
-    border-color: #00000088;
-}
+
 nav a:hover::after{
     
     width: 80%;
@@ -215,73 +134,8 @@ nav a::after{
 .hamburger{
     display: none;
 }
-.kontakt{
-    width: 90vw;
-    padding: 4rem;
-    background-color: #fff;
-    border-radius: 10px;
-    box-sizing: border-box;
-  margin-right: 5rem;
-    
-}
 
-
-
-.kontakt h2{
-    font-family: "Montserrat", sans-serif;
-    font-size: 4em;
-    width: 500px;
-    text-indent: 100px;
-    margin-top: -6rem;
-    font-weight: 400;
-}
-.kontakt .header p:first-child{
-    font-size: 1.7rem;
-}
-.kontakt > .top{
-    display: flex;
-    height: 70%;
-    justify-content: space-between;
-}
-.kontakt .text{
-    flex-basis: 50%;
-    align-self: flex-end;
-    margin-bottom: 2rem;
-    
-}
-.kontakt button{
-    background-color: #000;
-    color: #fff;
-    border: none;
-    font-size: 1.2rem;
-    padding: 0.5rem;
-    padding-inline: 3rem;
-    border-radius: 3rem;
-    font-weight: 200;
-}
-.secondary{
-
-    border: 1px solid #000;
-    
-    color: #000;
-    text-decoration: none;
-    padding: 0.5rem;
-    padding-inline: 3rem;
-    border-radius: 3rem;
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
-    margin-top: 0.7rem;
-    
-    
-    
-    }
    
-    
-    .btnContainer{
-        display: flex;
-        flex-direction: column;
-        width: 200px;
-    }
     footer{
 
         background-color: #fff;
@@ -325,9 +179,7 @@ nav a::after{
         a{
             position: relative;
         }
-        .secondary:hover::after{
-            width: 100px;
-        }
+       
         a:hover::after{
             width: 100%;
         }
@@ -408,9 +260,7 @@ a::after{
 a{
     position: relative;
 }
-.secondary:hover::after{
-    width: 100px;
-}
+
 a:hover::after{
     width: 100%;
 }
@@ -421,28 +271,11 @@ a:hover::after{
         padding-block: 2rem;
     }
     
-    .kontakt > .top{
-        flex-direction: column;
-    }
-    .formContainer p{
-        display: none;
-    }
-    .formContainer{
-        display: block;
-    }
-    form{
-        width: 100vw;
-    }
-
+    
 }
 @media screen and (max-width: 600px) {
 
-    .kontakt h2{
-        display: none;
-    }
-    .kontakt .header p:first-child{
-        font-size: 10vw;
-    }
+  
     footer h1{
         font-size: 25vw;
     }

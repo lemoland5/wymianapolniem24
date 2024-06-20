@@ -1,18 +1,9 @@
-const content = document.querySelector(".inside");
-
-
-
-function getScrollAmount() {
-	let contentWidth = content.scrollWidth;
-	return -(contentWidth - window.innerWidth+00);
-}
-
-
+const content = document.querySelector('header');
 
 const tween = gsap.to(content, {
-	x: getScrollAmount,
-	duration: 1,
-	ease: "none",
+	scale: 0.25,
+	duration: 3,
+	ease: "power3.out",
 });
 	
 	
@@ -20,18 +11,33 @@ const tween = gsap.to(content, {
 
 
 	const tl = ScrollTrigger.create({
-		trigger:".zainteresowania",
-		start:"top 0",
-		end: () => `+=${getScrollAmount() * -1}`,
-		pin:".zainteresowania",
+		trigger: "header",
+		start:"0",
+		end: window.innerHeight,
+		pin: ".page",
+        pinSpacing: true,
 		animation:tween,
-		scrub:0,
+		scrub:1,
 		invalidateOnRefresh:true,
 		markers:false
+        
 	})
-
+  
 	tl.refresh();
+	
+	const HamburgerTogle = document.querySelector(".hamburger");
+const menu = document.querySelector("nav ul");
 
 
 
 
+
+
+
+
+HamburgerTogle.addEventListener("click", ()=>{
+
+	menu.classList.toggle('active');
+	HamburgerTogle.classList.toggle('active');
+
+})
