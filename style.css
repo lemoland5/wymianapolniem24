@@ -93,7 +93,32 @@ header div h2{
       margin: 0;
       line-height: 4vw;
 
+
+
 }
+
+h2.fineprint{
+    margin-left: 24%;
+    font-size: 1vw;
+
+    font-family: "Montserrat";
+
+}
+
+h2.fineprintPl{
+    margin-left: 7%;
+    font-size: 1vw;
+
+    font-family: "Montserrat";
+}
+
+h2.fineprintDe{
+    margin-left: 19%;
+    font-size: 1vw;
+
+    font-family: "Montserrat";
+}
+
 header div h1{
     font-family: "monterrat", sans-serif;
     font-weight: 300;
